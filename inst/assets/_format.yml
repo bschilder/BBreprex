@@ -1,15 +1,33 @@
 format: 
   html:
+    output-dir: docs
+    execute:
+      keep-md: true
+      echo: true
+      message: false
+      warning: false
     grid:
       sidebar-width: 500px
       body-width: 800px
     theme: 
       - cosmo
       - assets/book.scss
-    mainfont: "Atkinson Hyperlegible, sans-serif"
+    number-sections: false
+    dpi: 300
     highlight-style: atom-one
-    code-link: true
-    editor: visual
-    citation-location: margin
-    bibliography: assets/bibliography.bib
-    from: markdown+emoji
+    code-fold: true
+    from: markdown+emoji 
+  pdf:
+    output-dir: pdf
+    execute:
+      keep-md: true
+      # echo: false
+      message: false
+      warning: false
+  docx:
+    output-dir: docx
+    execute:
+      keep-md: true
+      # echo: false
+      message: false
+      warning: false 
